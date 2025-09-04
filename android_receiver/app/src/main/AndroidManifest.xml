@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ohm.test.receiver">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:label="OHM Receiver"
+        android:supportsRtl="true">
+
+        <receiver android:name=".ScanReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.microsoft.dynamics.barcode.SCANNED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+</manifest>

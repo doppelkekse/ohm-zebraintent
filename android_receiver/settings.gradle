@@ -1,0 +1,2 @@
+rootProject.name = 'android_receiver'
+include ':app'
